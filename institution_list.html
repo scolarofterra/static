@@ -1,7 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
 <!DOCTYPE html>
 <html>
 <body>
-
+<div class='container-fluid'>
 <h2>myUniversity</h2>
 <p>The input type="search is used for search fields (behaves like a regular text field):</p>
 <form action="/action_page.php">
@@ -9,6 +12,8 @@
   <input type="search" name="universitysearch">
   <input type="submit">
 </form>
+</div>
+<div class='container-fluid'>
 <br><br>
 
 <form action="/action_page.php">
@@ -26,6 +31,7 @@
   <br><br>
   <input type="submit">
 </form>
-
+</div>
 </body>
 </html>
+{% endblock %}
